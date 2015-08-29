@@ -1,4 +1,4 @@
-c='''
+print('\n'.join(''.join(h*(ord(t)-31)for t,h in zip(l,' *'*5))for l in'''
 R&
 Q)
 P*
@@ -41,10 +41,4 @@ $\\
 (T
 +O
 /F
-'''
-r=''
-h=' *'
-for t in c:
-    if t=='\n':r+=t;i=0
-    else:r+=h[i]*(ord(t)-31);i=1-i
-print(r)
+'''.split('\n')))
